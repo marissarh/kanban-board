@@ -60,4 +60,25 @@ h1{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, box-shadow 0.2s;
 }
+.card:active{
+    cursor: grabbing;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
+.list-over{
+    background-color: #d1d3d8;
+
+}
+
+@media (max-with: 768px) {
+    .board {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
